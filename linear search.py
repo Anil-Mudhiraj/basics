@@ -27,3 +27,14 @@ if search(lst,n):
     print("found at",pos,'place')
 else:
     print("not found")
+    
+    
+principle=int(input("enter principle amount"))
+rate=int(input("enter rate of interest"))
+time=int(input("enter time"))
+def compound_interest(principle,rate,time ):
+	amount=principle*(pow((1+rate/100),time))
+	CI=amount-principle
+	return CI
+
+print("compound intrest is:",compound_interest(principle,rate,time))
